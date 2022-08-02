@@ -1,124 +1,329 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      p {
+        color: rgb(96, 165, 250);
+      }
+    </style>
     <!-- angin ekor (tailwind) CSS -->
-    <link rel="stylesheet" href="style.css">    
+    <link rel="stylesheet" href="style.css" />
     <!-- end angin ekor -->
     <title>Restoran SMK Revit</title>
-</head>
-<body>
-
+  </head>
+  <body class="font-Poppins text-cyan-700">
     <!-- header #1 -->
     <header>
-        <nav>
-            <div><img src="img/smkrevit.jpeg" alt="Logo SMK Revit"></div>
-            <ul>
-                <li>Menu</li>
-                <li>Harga</li>
-                <li>Kontak</li>
-                <button type="button">Login</button>
-            </ul>
-            <div><img src="icon/menu.svg" alt="menu bar"></div>
-        </nav>
+      <nav class="flex items-center bg-slate-100 shadow py-2">
+        <div class="w-4/12"><img src="img/airfrens.png" alt="Logo SMK Revit" /></div>
+        <ul class="hidden sm:flex flex-1 justify-end gap-5 uppercase text-sm items-center">
+          <li>Menu</li>
+          <li>Harga</li>
+          <li>Kontak</li>
+          <button type="button" class="bg-cyan-600 px-9 py-2.5 rounded-md uppercase text-white">Login</button>
+        </ul>
+        <div class="flex flex-1 justify-end sm:hidden"><img class="w-2/12" src="icon/menu.svg" alt="menu bar" /></div>
+      </nav>
     </header>
     <!-- end header #1 -->
 
     <!-- konten #2 main-->
-    <section>
-        <div>
-            <h1>Restoran SMK Revit</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum a magnam exercitationem minima officia ab corporis totam nulla ipsam dignissimos!</p>
-            <div>
-                <button>Order Sekarang</button>
-                <button>Daftar Sekarang</button>
-            </div>
-            <div><img src="img/bakso.jpg" alt=""></div>
-            <div>
-                <h2>Background</h2>
-            </div>
+    <section class="mt-5 px-4 relative">
+      <div class="container flex flex-col-reverse lg:flex-row items-center gap-10">
+        <div class="flex flex-1 flex-col gap-5">
+          <h1 class="text-3xl text-center lg:text-left lg:mt-44 font-extrabold">Restoran Air France</h1>
+
+          <p class="text-blue-400 text-center lg:text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum a magnam exercitationem minima officia ab corporis totam nulla ipsam dignissimos!</p>
+
+          <div class="flex justify-center gap-6 flex-wrap px-10 lg:px-0 lg:justify-start">
+            <button class="py-3 px-7 rounded-lg bg-red-500 text-white hover:bg-red-800 hover:shadow-md transition duration-300">Order Sekarang</button>
+            <button class="py-3 px-7 rounded-lg bg-slate-100 text-cyan-700 hover:bg-opacity-25 hover:shadow-md transition duration-300">Daftar Sekarang</button>
+          </div>
         </div>
+
+        <div class="flex flex-1 justify-center">
+          <img class="rounded-lg h-5/6 w-5/6 sm:h-3/4 sm:w-3/4 md:h-full md:w-full z-10" src="img/bakso.jpg" alt="" />
+        </div>
+        <div class="bg-cyan-600 hidden md:block h-80 w-1/2 rounded-l-3xl right-0 top-24 absolute"></div>
+      </div>
     </section>
     <!-- end konten #2 -->
 
     <!-- konten #3 flip-->
-    <section>
-        <div>
-            <h1>Menu Paling Laris</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores neque doloribus ab iusto, temporibus non odio et voluptatibus unde repellendus?</p>
+    <section class="mt-7 lg:mt-40 lg:pt-20 lg:pb-36 bg-slate-100 relative">
+      <div class="container">
+        <div class="py-5 px-4 text-center">
+          <h1 class="text-3xl font-extrabold">Menu Paling Laris</h1>
+          <p class="text-blue-400 mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores neque doloribus ab iusto, temporibus non odio et voluptatibus unde repellendus?</p>
         </div>
 
-        <div>
-            <!-- gambar -->
-            <div>
-                <img src="img/esjeruk.jpg" alt="es jeruk">
+        <div class="lg:flex lg:flex-1 lg:items-center">
+          <!-- gambar -->
+          <div class="flex flex-1 justify-center">
+            <img class="rounded-lg w-5/6 h-5/6 sm:h-3/4 sm:w-3/4 md:h-full md:w-full z-10" src="img/esjeruk.jpg" alt="es jeruk" />
+          </div>
+          <!-- keteranhan -->
+          <div class="flex flex-col px-4 lg:mt-44">
+            <h1 class="text-2xl text-center lg:text-right font-semibold lg:text-slate-100 z-20">Es Jeruk Bilek</h1>
+            <p class="text-center lg:text-right text-cyan-600 lg:text-white opacity-80 z-20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, commodi.</p>
+            <div class="flex justify-center lg:justify-end z-20">
+              <button class="mb-7 bg-cyan-600 rounded-lg text-slate-100 p-3 hover:bg-cyan-800 hover:shadow-md hover:text-slate-100 transition duration-300 lg:bg-slate-100 lg:text-cyan-800">Coba Gratis!</button>
             </div>
-            <!-- keteranhan -->
-            <div>
-                <h1>Es Jeruk Bilek</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore, voluptatum.</p>
-                <button>Coba Gratis!</button>
-            </div>
-            <!-- background -->
-            <div>
-                <h2>backgrund</h2>
-            </div>
+          </div>
+          <!-- background -->
         </div>
+        <div class="bg-cyan-600 hidden md:block h-80 w-full rounded-r-full left-0 top-80 absolute"></div>
+      </div>
     </section>
     <!-- end konten #3 -->
 
     <!-- konten #4 flop -->
-    <section>
-        <div>
-            <div>
-                <!-- gambar -->
-                <div>
-                    <img src="img/rawon.jpg" alt="es jeruk">
-                </div>
-                <!-- keteranhan -->
-                <div>
-                    <h1>Rawon Whatsapp</h1>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore, voluptatum.</p>
-                    <button>Coba Gratis!</button>
-                </div>
-                <!-- background -->
+    <section class="my-7 lg:my-0 lg:pt-12 lg:pb-32 relative">
+      <div class="container">
+        <div class="lg:flex lg:flex-1 lg:items-center lg:flex-row-reverse">
+          <!-- gambar -->
+          <div class="flex justify-center">
+            <img class="rounded-lg w-5/6 h-5/6 sm:h-3/4 sm:w-3/4 md:h-full md:w-full z-10" src="img/rawon.jpg" alt="rawon" />
+          </div>
+          <!-- keteranhan -->
+          <div class="flex flex-col px-4 lg:mt-44">
+            <h1 class="text-2xl text-center lg:text-left font-semibold lg:text-slate-100 z-20">Rawon Whatsapp</h1>
+            <p class="text-center lg:text-left text-cyan-600 lg:text-white opacity-80 z-20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, commodi.</p>
+            <div class="flex justify-center lg:justify-start z-20">
+              <button class="mb-7 bg-cyan-600 rounded-lg text-slate-100 p-3 hover:bg-cyan-800 hover:shadow-md hover:text-slate-100 transition duration-300 lg:bg-slate-100 lg:text-cyan-800">Coba Gratis!</button>
             </div>
-            <div>
-                <h2>background</h2>
-            </div>
+          </div>
+          <!-- background -->
         </div>
+        <div class="bg-cyan-600 hidden md:block h-80 w-full rounded-l-full right-0 top-44 absolute"></div>
+      </div>
     </section>
     <!-- end konten #4 -->
 
     <!-- konten #5 card -->
-    <section>
-        <div>
-            <!-- judul -->
-            <div>
-                <h1>Minuman Favorit</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, aut!</p>
-            </div>
-
-            <!-- gambar -->
-            <div>
-                <div>
-                    <!-- gambar es buah -->
-                    <div>
-                        <img src="img/esbuah.jpg" alt="es buah">
-                    </div>
-
-                    <!-- nama -->
-                    <div>
-                        <h1>Es Buah</h1>
-                        <h2>Mulai Rp. 3.000</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti repellat debitis dolor eos. Molestiae quidem, nam deserunt vel reprehenderit nobis!</p>
-                    </div>
-                </div>
-            </div>
+    <section class="py-10 lg:py-28 bg-slate-100">
+      <div>
+        <!-- judul -->
+        <div class="pb-5 px-4">
+          <h1 class="text-center text-3xl font-extrabold">Minuman Favorit</h1>
+          <p class="text-center text-blue-400 mt-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, aut!</p>
         </div>
+
+        <!-- card container -->
+        <div class="flex flex-wrap mx-auto justify-evenly gap-5 px-5 lg:px-0">
+          <!-- card -->
+          <div class="w-80 lg:w-1/4 rounded-lg shadow-xl bg-white">
+            <img src="img/esteh.jpg" alt="" class="rounded-t-lg h-60 w-full object-cover" />
+            <!--Card Header-->
+            <header class="text-xl font-extralight p-4">Es Teh</header>
+            <div class="px-5">
+              <p class="px-4">Panas-panas minum teh es hangat</p>
+            </div>
+            <!--Card Footer-->
+            <footer class="text-right py-3 px-8">
+              <button class="py-2 px-4 mt-5 bg-cyan-600 rounded-lg text-white font-semibold hover:bg-red-500 hover:shadow-lg transition duration-300">Order Now</button>
+            </footer>
+          </div>
+
+          <div class="w-80 lg:w-1/4 rounded-lg shadow-xl bg-white">
+            <img src="img/esteh.jpg" alt="" class="rounded-t-lg h-60 w-full object-cover" />
+            <!--Card Header-->
+            <header class="text-xl font-extralight p-4">Es Teh</header>
+            <div class="px-5">
+              <p class="px-4">Panas-panas minum teh es hangat</p>
+            </div>
+            <!--Card Footer-->
+            <footer class="text-right py-3 px-8">
+              <button class="py-2 px-4 mt-5 bg-cyan-600 rounded-lg text-white font-semibold hover:bg-red-500 hover:shadow-lg transition duration-300">Order Now</button>
+            </footer>
+          </div>
+
+          <!-- card -->
+          <div class="w-80 lg:w-1/4 rounded-lg shadow-xl bg-white">
+            <img src="img/esbuah.jpg" alt="" class="rounded-t-lg h-60 w-full object-cover" />
+            <!--Card Header-->
+            <header class="text-xl font-extralight p-4">Es Buah Badag</header>
+            <div class="px-5">
+              <p class="px-4">Es buah segearr banget coyyy</p>
+            </div>
+            <!--Card Footer-->
+            <footer class="text-right py-3 px-8">
+              <button class="py-2 px-4 mt-5 bg-cyan-600 rounded-lg text-white font-semibold hover:bg-red-500 hover:shadow-lg transition duration-300">ORDER NOW</button>
+            </footer>
+          </div>
+
+          <!-- card -->
+          <div class="w-80 lg:w-1/4 rounded-lg shadow-xl bg-white">
+            <img src="img/esjeruk.jpg" alt="" class="rounded-t-lg h-60 w-full object-cover" />
+            <!--Card Header-->
+            <header class="text-xl font-extralight p-4">Es Jeruk Bilek</header>
+            <div class="px-5">
+              <p class="px-4">Dibuat dari Jeruk LMAO berkualitas tinggi</p>
+            </div>
+            <!--Card Footer-->
+            <footer class="text-right py-3 px-8">
+              <button class="py-2 px-4 mt-5 bg-cyan-600 rounded-lg text-white font-semibold hover:bg-red-500 hover:shadow-lg transition duration-300">ORDER NOW</button>
+            </footer>
+          </div>
+
+          <!-- card -->
+          <div class="w-80 lg:w-1/4 rounded-lg shadow-xl bg-white">
+            <img src="img/esteh.jpg" alt="" class="rounded-t-lg h-60 w-full object-cover" />
+            <!--Card Header-->
+            <header class="text-xl font-extralight p-4">Lorem</header>
+            <div class="px-5">
+              <p class="px-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, accusamus dignissimos incidunt quis molestiae dolore.</p>
+            </div>
+            <!--Card Footer-->
+            <footer class="text-right py-3 px-8">
+              <button class="py-2 px-4 mt-5 bg-cyan-600 rounded-lg text-white font-semibold hover:bg-red-500 hover:shadow-lg transition duration-300">ORDER NOW</button>
+            </footer>
+          </div>
+
+          <!-- card -->
+          <div class="w-80 lg:w-1/4 rounded-lg shadow-xl bg-white">
+            <img src="img/esteh.jpg" alt="" class="rounded-t-lg h-60 w-full object-cover" />
+            <!--Card Header-->
+            <header class="text-xl font-extralight p-4">Lorem</header>
+            <div class="px-5">
+              <p class="px-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, accusamus dignissimos incidunt quis molestiae dolore.</p>
+            </div>
+            <!--Card Footer-->
+            <footer class="text-right py-3 px-8">
+              <button class="py-2 px-4 mt-5 bg-cyan-600 rounded-lg text-white font-semibold hover:bg-red-500 hover:shadow-lg transition duration-300">ORDER NOW</button>
+            </footer>
+          </div>
+        </div>
+
+        <!-- card -->
+        <div class="hidden">
+          <div>
+            <!-- gambar -->
+            <div class="flex flex-1 justify-center">
+              <img class="rounded-lg w-5/6 h-5/6 sm:h-3/4 sm:w-3/4 md:h-full md:w-full" src="img/esbuah.jpg" alt="es buah" />
+            </div>
+
+            <!-- nama -->
+            <div class="text-center">
+              <h1 class="text-2xl">Es Buah</h1>
+              <h2>Mulai Rp. 3.000</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti repellat debitis dolor eos. Molestiae quidem, nam deserunt vel reprehenderit nobis!</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- end konten #5 -->
-</body>
+
+    <!-- konten #6 rounded -->
+    <section class="py-10 lg:py-28">
+      <div>
+        <div class="pb-5 lg:pb-24">
+          <h1 class="text-3xl text-center font-extrabold">Chef Kami</h1>
+        </div>
+        <!-- CHEF CHEF -->
+        <div class="kontener-chef space-y-14">
+          <div>
+            <div class="flex flex-1 justify-center">
+              <img class="rounded-full object-cover w-9/12 h-9/12 lg:w-1/4 lg:h-1/4" src="img/chef1.jpg" alt="foto chef 1" />
+            </div>
+            <div class="text-center space-y-3 mt-3 px-4 lg:mt-10">
+              <h1 class="text-2xl">Chef Rudi Radiator</h1>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus assumenda error est facilis optio omnis magnam. Corrupti, iusto quos. Sapiente.</p>
+            </div>
+          </div>
+          <div>
+            <div class="flex flex-1 justify-center">
+              <img class="rounded-full object-cover w-9/12 h-9/12 lg:w-1/4 lg:h-1/4" src="img/chef1.jpg" alt="foto chef 1" />
+            </div>
+            <div class="text-center space-y-3 mt-3 px-4 lg:mt-10">
+              <h1 class="text-2xl">Chef Rudi Radiator</h1>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus assumenda error est facilis optio omnis magnam. Corrupti, iusto quos. Sapiente.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end konten #6 -->
+
+    <!-- konten #7 FAQ -->
+    <section class="bg-slate-100 py-10 lg:py-28">
+      <div>
+        <div class="text-center px-4">
+          <h1 class="text-3xl lg:text-6xl font-extrabold font-serif">FAQ</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, dolorem.</p>
+        </div>
+
+        <div class="px-7 lg:w-2/4 lg:mx-auto">
+          <div class="mt-10 text-xl">
+            <div class="flex justify-center md:justify-between lg:justify-between p-2 bg-white border-b-2 border-slate-100">
+              <span>Lorem ipsum dolor sit amet.</span>
+              <img class="w-5 ml-4" src="icon/arrow.svg" alt="" />
+            </div>
+            <div class="flex justify-center md:justify-between lg:justify-between p-2 bg-white border-b-2 border-slate-100">
+              <span>Lorem ipsum dolor sit amet.</span>
+              <img class="w-5 ml-4" src="icon/arrow.svg" alt="" />
+            </div>
+            <div class="flex justify-center md:justify-between lg:justify-between p-2 bg-white border-b-2 border-slate-100">
+              <span>Lorem ipsum dolor sit amet.</span>
+              <img class="w-5 ml-4" src="icon/arrow.svg" alt="" />
+            </div>
+            <div class="flex justify-center md:justify-between lg:justify-between p-2 bg-white border-b-2 border-slate-100">
+              <span>Lorem ipsum dolor sit amet.</span>
+              <img class="w-5 ml-4" src="icon/arrow.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="flex mt-10 justify-center">
+          <button type="button" class="px-5 py-3 bg-red-500 rounded-3xl text-white hover:bg-red-800 hover:shadow-md transition duration-300">Ingfo Lebih Lanjut</button>
+        </div>
+      </div>
+    </section>
+    <!-- end konten #7 -->
+
+    <!-- konten #8 Kontak -->
+    <section class="bg-red-500 py-10 lg:py-28">
+      <div>
+        <div class="text-center space-y-3 lg:space-y-10">
+          <h1 class="text-slate-100 font-extrabold text-2xl">10.000+ Pelanggan</h1>
+          <p class="text-slate-100 font-bold">Ikut Berlangganan ?</p>
+          <div class="flex flex-wrap justify-center px-10 space-y-2 sm:space-y-0 md:space-y-0 md:space-x-2 lg:space-y-0 lg:spaxe-x-3">
+            <input placeholder="Jawaban Anda" type="text" class="rounded-full h-10 text-black box-border p-3" />
+            <button type="button" class="bg-slate-100 text-cyan-600 px-2 py-2 rounded-lg font-bold md:mt-0 hover:shadow-lg hover:bg-slate-200 hover:text-cyan-700 transition duration-300">Berlangganan Sekarang</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end konten #8 -->
+
+    <!-- footer #9 -->
+    <footer class="bg-slate-900 px-7 py-10">
+      <div class="lg:flex space-y-12 lg:space-y-0">
+        <div class="flex flex-1 justify-center lg:justify-between">
+          <ul class="flex gap-x-10 font-semibold lg:items-center text lg:text-2xl lg:font-medium lg:gap-y-8">
+            <li>Menu</li>
+            <li>Harga</li>
+            <li>Kontak</li>
+          </ul>
+        </div>
+        <!-- medsos -->
+        <div class="flex flex-1 justify-center lg:justify-between">
+          <div>
+            <div class="flex gap-x-12 items-center">
+              <img class="w-10 h-10 lg:w-10 lg:h-10" src="icon/facebook.svg" alt="fesbuk" />
+              <p class="text-cyan-700">airfrance</p>
+            </div>
+            <div class="flex gap-x-12 items-center">
+              <img class="w-10 h-10 lg:w-10 lg:h-10" src="icon/twitter.svg" alt="twitter" />
+              <p class="text-cyan-700">@Airfrance</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer #9 -->
+  </body>
 </html>
